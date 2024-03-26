@@ -1,0 +1,49 @@
+{
+    "base": "src",
+    "functions":
+    [
+        {
+            "path": "ns_architecture.utils.add_indentation",
+            "args":
+            [
+                {
+                    "type_arg": "str",
+                    "name": "line"
+                },
+                {
+                    "type_arg": "int",
+                    "name": "nb_indent"
+                }
+            ],
+            "tests":
+            [
+                {
+                    "args":
+                    {
+                        "nb_indent": 1,
+                        "line": "'def test():'"
+                    },
+                    "result":
+                    {
+                        "type_arg": "str",
+                        "arg": "'    def test():'"
+                    },
+                    "suffix": "completed_one_level_indentation"
+                },
+                {
+                    "args":
+                    {
+                        "nb_indent": 2,
+                        "line": "'print(3)'"
+                    },
+                    "result":
+                    {
+                        "type_arg": "str",
+                        "arg": "'print(3)'"
+                    },
+                    "suffix": "completed_double_indentation"
+                }
+            ]
+        }
+    ]
+}

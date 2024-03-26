@@ -18,14 +18,14 @@ class TestDynamic:
     def parse_args(self):
         args_dic_test = self.dict_test["args"]
         for arg_name in args_dic_test:
-            type_arg_str = args_dic_test[arg_name]["type_arg"]
-            arg_value = args_dic_test[arg_name]["arg"]
-            new_arg = check_type_arg(
-                type_arg_str=type_arg_str,
-                arg=arg_value,
-                list_import=self.list_import,
-            )
-            yield f"{arg_name} = {new_arg}"
+            # type_arg_str = args_dic_test[arg_name]["type_arg"]
+            arg_value = args_dic_test[arg_name]
+            # new_arg = check_type_arg(
+            #     type_arg_str=type_arg_str,
+            #     arg=arg_value,
+            #     list_import=self.list_import,
+            # )
+            yield f"{arg_name} = {arg_value}"
 
     def create_test(self):
         func_test_name = f"test_{self.function_name}_{self.suffix}"
