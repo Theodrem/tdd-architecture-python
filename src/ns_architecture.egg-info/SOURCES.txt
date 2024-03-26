@@ -1,3 +1,4 @@
+README.md
 pyproject.toml
 setup.py
 src/ns_architecture/__init__.py
@@ -16,13 +17,14 @@ src/ns_architecture/agenda/__init__.py
 src/ns_architecture/agenda/file_to_test.py
 src/ns_architecture/management_functions/__init__.py
 src/ns_architecture/management_functions/build_file.py
+src/ns_architecture/management_functions/task.py
 src/ns_architecture/management_tests/__init__.py
+src/ns_architecture/management_tests/task.py
 src/ns_architecture/management_tests/test_dynamic.py
 src/ns_architecture/management_tests/test_file.py
+src/ns_architecture/management_tests/utils.py
 src/ns_architecture/management_tests/__pycache__/__init__.cpython-38.pyc
 src/ns_architecture/management_tests/__pycache__/test_file.cpython-38.pyc
 src/ns_architecture/tests/__init__.py
+src/ns_architecture/tests/test_add_indentation.py
 src/ns_architecture/tests/__pycache__/__init__.cpython-38.pyc
-src/ns_architecture/tests/tests_agenda/__init__.py
-src/ns_architecture/tests/tests_agenda/test_add_y.py
-src/ns_architecture/tests/tests_agenda/test_ensure_pendulum.py
