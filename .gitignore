@@ -1,0 +1,7 @@
+*__pycache__
+env/
+dist/
+build/
+/pytest_cache/
+config.json
+test_content.json
