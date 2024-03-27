@@ -36,3 +36,8 @@ Create a json configuration, you have an example for this project. All tests in 
 ```shell
 management cmd-create-test <path your json config>
 ```
+
+## project testing
+```shell
+ pytest -s src/ns_architecture/tests
+```
