@@ -1,0 +1,39 @@
+{
+    "base": "src",
+    "functions":
+    [
+        {
+            "path": "ns_architecture.utils.add_break_line_after_lines",
+            "args":
+            [
+                {
+                    "type_arg": "list",
+                    "name": "content_file"
+                }
+            ],
+            "tests":
+            [
+                {
+                    "args":
+                    {
+                        "content_file":
+                        [
+                            "hello",
+                            "world"
+                        ]
+                    },
+                    "result":
+                    {
+                        "type_arg": "list",
+                        "arg":
+                        [
+                            "hello\n",
+                            "world\n"
+                        ]
+                    },
+                    "suffix": "completed"
+                }
+            ]
+        }
+    ]
+}
